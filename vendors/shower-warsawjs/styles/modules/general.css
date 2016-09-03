@@ -2,3 +2,19 @@
 .slide:after {
     display: none;
 }
+.images-list {
+  list-style-type: none;
+}
+.images-list li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+}
+.images-list li img {
+  width: 150px;
+  margin: 0 20px;
+}
+
+.images-list li:before {
+  color: white !important;
+}

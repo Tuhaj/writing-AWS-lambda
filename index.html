@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>WarsawJS Slides: Template</title>
+    <title>WarsawJS Slides: Writing your first AWS lambda with Amazon S3 using JS</title>
 
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -17,7 +17,7 @@
 </head>
 <body class="shower list">
     <header class="caption">
-        <h1>WarsawJS Slides: Template</h1>
+        <h1>WarsawJS Slides: Writing your first AWS lambda with Amazon S3 using JS</h1>
         <p>We talk about JavaScript. Each month in Warsaw, Poland.</p>
     </header>
 
@@ -28,296 +28,208 @@
         </div>
         <div class="details">
             <!-- 1. Avatar -->
-            <img src="pictures/fake-speaker-avatar.jpg" alt="Speaker"/>
+            <img src="pictures/fake-speaker-avatar.jpg" alt="Speaker" style="height: 200px" />
 
             <!-- 2. Speaker -->
-            <h2>Speaker name</h2>
+            <h2>Piotr Zientara</h2>
 
             <!-- 3. Presentation title -->
-            <h2><strong>"WarsawJS Slides: Template"</strong></h2>
+            <h2><strong>Writing your first AWS lambda with Amazon S3 using JS</strong></h2>
 
             <!-- 4. Presentation date -->
-            <h2>XXXX-XX-XX</h2>
+            <h2>2016-09-14</h2>
 
             <!-- 5. Contact the speaker -->
-            <h2><a href="http://twitter.com/speaker">@speaker</a></h2>
+            <h2><a href="http://twitter.com/Piotr_Zientara">@Piotr_Zientara</a></h2>
         </div>
     </section>
 
     <section class="slide">
-        <h2>Please update slides:</h2>
+        <h2>About me</h2>
         <ul>
-            <li>rename project at <mark>GitHub</mark> with snake-case convention</li>
-            <li><mark>description</mark> and <mark>link</mark> on GitHub repository profile</li>
-            <li>link to <mark>"Fork me on GitHub"</mark> on the bottom of document</li>
-            <li>setup presentation title in
+            <li>2.5 years of experience as a fullstack dev at <mark><a href="http://rebased.pl/">Rebased</a></mark></li>
+            <li><mark><a href="http://warsawjs.com/">WarsawJS</a></mark> organizer</li>
+            <li>former teacher and educator</li>
+            <li>Happy programmer at <mark><a href="http://www.jobartis.com/">Jobartis</a></mark> we work at <a href="https://www.techhub.com/">TechHub</a>  in Warsaw</li>
+            <li>Sometimes coach at <mark><a href="http://railsgirls.com/">RailsGirl</a></mark> and <mark><a href="http://railsgirlssummerofcode.org/">Rails Girls Summer of Code</a></mark></li>
+        </ul>
+        <ul class="images-list">
+            <li><img src="https://raw.github.com/warsawjs/logo.js/master/warsawjs/WarsawJS.png"/></li>
+            <li><img src="http://rebased.pl/images/contact/rebased-logo-picture.png"/></li>
+            <li><img src="https://jobartis-production.s3.amazonaws.com/jobartis-color-square.png"/></li>
+            <li><img src="http://railsgirls.com/images/railsgirls-sq.png"/></li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>This presentation plan</h2>
+        <ul>
+            <li>What is AWS Labmda?</li>
+            <li>How to implement it?</li>
+            <li>Evaluation of the tool</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>What is an AWS S3 Lambda?</h2>
+        <ul>
+            <li>code that can be run on your behalf using AWS infrastructure</li>
+            <li>written in supported language (Node.js, Java, and Python)</li>
+            <li>that can be used as:
                 <ul>
-                    <li><mark>&lt;title&gt;</mark> tag on the top of document in <mark>&lt;head&gt;</mark> tag</li>
-                    <li><mark>README.md</mark> file</li>
-                    <li><mark>&lt;h1&gt;</mark> tag at <mark>&lt;header&gt;</mark> tag on the top of document</li>
+                    <li>event-driven compute service where AWS Lambda runs your code in response to events</li>
+                    <li><mark>compute service to run your code in response to HTTP requests using Amazon API Gateway or API calls made using AWS SDKs.</mark></li>
                 </ul>
             </li>
         </ul>
     </section>
 
     <section class="slide">
-        <h2>List Navigation</h2>
-        <ol>
-            <li>Ennui keffiyeh thundercats</li>
-            <li class="next">Jean shorts biodiesel</li>
-            <li class="next">Terry richardson, swag blog</li>
-            <li class="next">Locavore umami vegan helvetica</li>
-            <li class="next">Fingerstache kale chips</li>
-        </ol>
-        <p class="next">Before they sold out master</p>
+        <h2>How to start?</h2>
+        <ul>
+            <li>Have an AWS S3 account</li>
+            <li>Have an idea</li>
+            <li>Have some time to read the docs or just listen to this presentation ;-)</li>
+            <li><a href="http://docs.aws.amazon.com/lambda/latest/dg/lambda-introduction.html">the docs are here (with turorial)</a></li>
+        </ul>
     </section>
 
     <section class="slide">
-        <h2>Slide Header</h2>
-
-        <p>Echo Park 8-bit sustainable umami deep v Kickstarter. DIY cliche typewriter brunch, Odd Future sriracha pickled aesthetic. Farm-to-table bespoke fingerstache, kale chips umami brunch letterpress.</p>
-        <p>Whatever authentic disrupt, you probably haven't heard of them direct trade mlkshk Etsy. Gluten-free roof party plaid four loko quinoa.</p>
-        <p class="note">Echo Park 8-bit sustainable umami deep v Kickstarter.</p>
+        <h2>Other tutorials</h2>
+        <p>Here is a good one, but huge!</p>
+        <p><a href="https://github.com/dwyl/learn-aws-lambda">learn-aws-lambda</a></p>
     </section>
 
     <section class="slide">
-        <h2>Inline Elements</h2>
+        <h2>How to start?</h2>
+        <ul>
+            <li>Have an AWS S3 account</li>
+            <li>Have an idea</li>
+            <li>Have some time to read the docs or just listen to this presentation ;-)</li>
+        </ul>
+    </section>
 
-        <p>Retro meh brunch <a href="">aesthetic</a> Cosby sweater Shoreditch. Banksy Tumblr
-            <strong>sriracha</strong>, flexitarian pug chia master cleanse vinyl
-            <em>wayfarers</em> fanny pack bespoke Helvetica <b>roof</b> party. Messenger bag retro cred
-            <i>Portland</i> next level. Yr stumptown Schlitz Carles deep v small batch. Hella sustainable messenger bag,
-            <mark>leggings</mark>
-            skateboard literally<sup>1</sup> bicycle rights H<sub>2</sub>0 mumblecore banh mi DIY VHS. Semiotics four loko street art asymmetrical. Asymmetrical
-            <code>&lt;paleo&gt;</code> you probably haven’t heard of.
-        </p>
+    <section class="slide prism">
+        <h2>Example lambda in node.js</h2>
 
-        <footer class="footer">
-            <p>Retro meh brunch <a href="">aesthetic</a> Cosby sweater Shoreditch. Banksy Tumblr
-                <strong>sriracha</strong>, flexitarian pug chia master cleanse vinyl
-                <em>wayfarers</em> fanny pack bespoke Helvetica <b>roof</b> party. Messenger bag retro cred
-                <i>Portland</i> next level. Yr stumptown Schlitz Carles deep v small batch. Hella sustainable messenger bag,
-                <mark>leggings</mark>
-                skateboard literally<sup>1</sup> bicycle rights H<sub>2</sub>0 mumblecore banh mi DIY VHS. Semiotics four loko street art asymmetrical. Asymmetrical
-                <code>&lt;paleo&gt;</code> you probably haven’t heard of.
-            </p>
-        </footer>
+        <pre style="font-size: 28px;" class="language-javascript line-numbers">
+            <code>
+            'use strict';
+            console.log('Loading event');
+
+            exports.handler = function(event, context) {
+              var hello = { "Hello":"World" }
+              // SUCCESS with message
+              context.done(null, hello);
+            };
+            </code>
+        </pre>
+    </section>
+
+    <section class="slide prism">
+        <h2>Another example with params</h2>
+
+        <pre style="font-size: 25px;" class="language-javascript line-numbers">
+            <code>
+                console.log('Loading event');
+
+                exports.myHandler = function(event, context, callback) {
+                    console.log("value1 = " + event.key1);
+                    console.log("value2 = " + event.key2);
+                    callback(null, "some success message");
+                    // or
+                    // callback("some error type");
+                })
+            </code>
+        </pre>
     </section>
 
     <section class="slide">
-        <h2>Columns</h2>
-        <p class="double">Echo Park 8-bit sustainable umami deep v Kickstarter. DIY cliche typewriter brunch, Odd Future sriracha pickled aesthetic. Farm-to-table bespoke fingerstache, kale chips umami brunch American Apparel letterpress. Whatever authentic disrupt, you probably haven't heard of them direct trade mlkshk Etsy. Gluten-free roof party plaid American Apparel four loko quinoa. Echo Park 8-bit sustainable.</p>
+        <h2>Let's have an idea</h2>
+        <ul>
+            <li>What is the year using in alterntive calendars? Eg. A.U.C. (Ab Urbe Condita), abbr. to Anno Urbis (AU) instead of post Christum natum abbr. to Anno Domini (AD)?</li>
+            <li>we can ask for year Post Warsaw JS Condita (WJS) with a paratmeter</li>
+        </ul>
     </section>
 
     <section class="slide">
-        <h2>Quotes</h2>
-        <blockquote>
-            <p>Flannel bicycle rights locavore selfies skateboard. Authentic fanny pack paleo four loko bespoke. Artisan tattooed chia XOXO ennui, lomo disrupt 8-bit art party Tumblr scenester.</p>
-        </blockquote>
-        <figure>
-            <blockquote>
-                <p>Post-ironic fashion axe flexitarian, Tonx narwhal messenger bag Tumblr. Portland gentrify deep v kale chips literally.</p>
-            </blockquote>
-            <figcaption>Yours Truly</figcaption>
-        </figure>
-    </section>
-
-    <section class="slide">
-        <h2>Nested Lists</h2>
-        <ol>
-            <li>Literally viral vegan, ugh drinking vinegar photo booth</li>
-            <li>Wes Anderson chillwave Marfa pour-over Etsy banh mi</li>
-            <li>Ethnic polaroid lo-fi iPhone ennui
+        <h2>Simple function with API Gateway (1/2)</h2>
+        <ul>
+            <li>Amazon Services > Lambda > Get started now</li>
+            <li>Configure function
                 <ul>
-                    <li>Yr wayfarers before they sold out Kickstarter asymmetrical</li>
-                    <li>Irony flexitarian readymade quinoa, kogi bespoke meggings narwhal</li>
-                    <li>Skateboard Etsy twee artisan Echo Park</li>
+                    <li>write the body of the function</li>
+                    <li>set the role</li>
+                    <li>create function</li>
+                    <li>test it</li>
+                    <li>remember the region where is is created!</li>
                 </ul>
             </li>
-            <li>Tonx kitsch fingerstache readymade, retro single-origin coffee</li>
-        </ol>
+        </ul>
     </section>
 
     <section class="slide">
-        <h2>Simple Table</h2>
-        <table>
-            <tr>
-                <th scope="col">Gentrify</th>
-                <th>Twee</th>
-                <th>Artisan</th>
-                <th>Banksy</th>
-            </tr>
-            <tr>
-                <th scope="row">Messenger</th>
-                <td>Mixtape</td>
-                <td>Small batch</td>
-                <td>Bicycle rights</td>
-            </tr>
-            <tr>
-                <th scope="row">Meggings</th>
-                <td>Freegan</td>
-                <td>Retro biodiesel</td>
-                <td>Slow-carb</td>
-            </tr>
-            <tr>
-                <th scope="row">Vegan</th>
-                <td>Occupy</td>
-                <td>Normcore</td>
-                <td>Put a bird on it</td>
-            </tr>
-            <tr>
-                <th scope="row">Next level</th>
-                <td>Selfies</td>
-                <td>Sustainable</td>
-                <td>Organic</td>
-            </tr>
-            <tr>
-                <th scope="row">Umami</th>
-                <td>Asymmetrical</td>
-                <td>Keytar</td>
-                <td>Craft beer</td>
-            </tr>
-            <tr>
-                <th scope="row">Biodiesel</th>
-                <td>Haven’t heard</td>
-                <td>Skateboard</td>
-                <td>Farm-to-table</td>
-            </tr>
-        </table>
+        <h2>Simple function with API Gateway (2/2)</h2>
+        <ul>
+           <li>Setup gateway
+                <ul>
+                    <li>API Gateway</li>
+                    <li>get started -> create Gateway</li>
+                    <li>resources -> create GET resource</li>
+                    <li>test it</li>
+                </ul>
+            </li>
+        </ul>
     </section>
 
     <section class="slide">
-        <h2>Striped Table</h2>
-        <table class="striped">
-            <tr>
-                <th scope="col">Gentrify</th>
-                <th>Twee</th>
-                <th>Artisan</th>
-                <th>Banksy</th>
-            </tr>
-            <tr>
-                <th scope="row">Messenger</th>
-                <td>Mixtape</td>
-                <td>Small batch</td>
-                <td>Bicycle rights</td>
-            </tr>
-            <tr>
-                <th scope="row">Meggings</th>
-                <td>Freegan</td>
-                <td>Retro biodiesel</td>
-                <td>Slow-carb</td>
-            </tr>
-            <tr>
-                <th scope="row">Vegan</th>
-                <td>Occupy</td>
-                <td>Normcore</td>
-                <td>Put a bird on it</td>
-            </tr>
-            <tr>
-                <th scope="row">Next level</th>
-                <td>Selfies</td>
-                <td>Sustainable</td>
-                <td>Organic</td>
-            </tr>
-            <tr>
-                <th scope="row">Umami</th>
-                <td>Asymmetrical</td>
-                <td>Keytar</td>
-                <td>Craft beer</td>
-            </tr>
-            <tr>
-                <th scope="row">Biodiesel</th>
-                <td>Haven’t heard</td>
-                <td>Skateboard</td>
-                <td>Farm-to-table</td>
-            </tr>
-        </table>
-    </section>
-
-    <section class="slide prism">
-        <h2>Listing Slide</h2>
-
-        <pre style="font-size: 45px;" class="language-javascript line-numbers">
-            <code>
-                function wrap(value) {
-                    return function () {
-                        return value;
-                    }
-                }
-
-                function bind(monad, f) {
-                    return f(monad());
-                }
-            </code>
-        </pre>
-    </section>
-
-    <section class="slide prism">
-        <pre style="font-size: 30px;" class="language-javascript line-numbers">
-            <code>
-                var monad = wrap('cookie');
-                bind(monad, (value) => {
-                    console.info(value);
-                    return wrap(value);
-                });
-                monad = bind(monad, (value) => {
-                    return wrap({ type: value });
-                });
-                bind(monad, (value) => {
-                    console.log(value);
-                    return wrap(value);
-                });
-            </code>
-        </pre>
+        <h2>Hold up! Live coding session!</h2>
+        <h3 class="shout grow">What can go wrong? ;-)</h3>
     </section>
 
     <section class="slide">
-        <h2 class="shout"><a href="">Linked</a> Shout</h2>
+        <h2>What might go wrong?</h2>
+        <ul>
+           <li>buckets confusion</li>
+           <li>POST requests get JSON</li>
+           <li>getting lost in the docs</li>
+           <li>setting the access policy wrong</li>
+           <li>be disappointed with the tests results</li>
+        </ul>
     </section>
 
     <section class="slide">
-        <h2 class="shout grow">Effect: Growing Shout</h2>
+        <h2>What I was expecting to be different?</h2>
+        <ul>
+           <li>easier management / usage of the AWS console</li>
+           <li><a href="http://stackoverflow.com/questions/38610223/zip-with-amazon-lambda-why-is-it-slow">why Amazon lambda is slow</a>- my question on SO</li>
+           <li>free support from the AWS team</li>
+        </ul>
     </section>
 
     <section class="slide">
-        <h2 class="shout shrink">Effect: Shrinking Shout</h2>
+        <h2>Examples of using</h2>
+        <p>My case on production project<p>
+            <ul>
+               <li>creating a ZIP archive form files on Amazon S3 bucket and giving a link to the user</li>
+               <li>performance is important</li>
+               <li>simplicity and scalability is important</li>
+            </ul>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout grow">Thanks for watching!</h2>
     </section>
 
     <section class="slide">
         <figure>
             <img class="cover" src="vendors/shower-ribbon/pictures/exact.png" alt="">
-            <figcaption class="white">Copyright © 2016 <a href="">Yours Truly</a>, Famous Inc.</figcaption>
+            <figcaption class="white">Copyright © 2016 <a href="">Piotr Zientara</a></figcaption>
         </figure>
     </section>
 
     <section class="slide">
-        <img class="cover" src="vendors/shower-ribbon/pictures/tall.png" alt="">
-    </section>
-
-    <section class="slide">
-        <img class="cover" src="vendors/shower-ribbon/pictures/wide.png" alt="">
-    </section>
-
-    <section class="slide white">
-        <img class="place top left" src="vendors/shower-ribbon/pictures/square.png" alt="">
-        <img class="place top" src="vendors/shower-ribbon/pictures/square.png" alt="">
-        <img class="place top right" src="vendors/shower-ribbon/pictures/square.png" alt="">
-
-        <img class="place left" src="vendors/shower-ribbon/pictures/square.png" alt="">
-        <img class="place" src="vendors/shower-ribbon/pictures/square.png" alt="">
-        <img class="place right" src="vendors/shower-ribbon/pictures/square.png" alt="">
-
-        <img class="place bottom left" src="vendors/shower-ribbon/pictures/square.png" alt="">
-        <img class="place bottom" src="vendors/shower-ribbon/pictures/square.png" alt="">
-        <img class="place bottom right" src="vendors/shower-ribbon/pictures/square.png" alt="">
-    </section>
-
-    <section class="slide" data-timing="00:03">
-        <h3 class="shout">Automatic switch slide after <strong>3 secs</strong> ...</h3>
-    </section>
-
-    <section class="slide">
-        <h3 class="shout">See you next month at WarsawJS</h3>
+        <h2>See you next month at WarsawJS#26 (second Wednesday of October)</h2>
     </section>
 
     <div class="progress"></div>
