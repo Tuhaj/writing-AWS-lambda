@@ -18,3 +18,11 @@
 .images-list li:before {
   color: white !important;
 }
+
+.slide.compact {
+    padding: 50px;
+}
+
+h2.shout {
+  font-size: 60px !important;
+}
